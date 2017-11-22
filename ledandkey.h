@@ -10,8 +10,6 @@
 class LedAndKey {
 	public:
 		void init(uint8_t stb, uint8_t clk, uint8_t dat);	
-		void shiftOut(char value);
-		char shiftIn();
 		char readKeys();
 		void sendCommand(char value);
 		void reset();
@@ -21,10 +19,6 @@ class LedAndKey {
 		void dispNumber(char num, char value); // value=0-f
 
 	private:
-		//DigitalOut _CLK;
-		//DigitalInOut _DAT;
-		//DigitalOut _STB;
-
 		uint8_t _CLK;
 		uint8_t _DAT;
 		uint8_t _STB;
